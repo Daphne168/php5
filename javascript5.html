@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript(點icon呈現答案)v2</title>
+
+</head>
+
+<body>
+
+  <h1>改變網頁上的某個資料</h1>
+  <p>日月潭 的中間是什麼？</p>
+
+  <input type="button" value="按我" id="btn" ; onmouseout="back_tit();">
+  答案是：<span id="msg">???</span>
+
+
+</body>
+
+
+<script>
+
+
+  document.getElementById('btn').onclick = function () {
+    show_answer();
+  }
+
+  //console是方便程式人員除錯用
+  function show_answer() {
+    document.getElementById("msg").innerHTML = "月";
+    console.log('hello');
+  }
+
+  function back_tit() {
+    document.getElementById("msg").innerHTML = "???";
+  }
+
+
+</script>
+
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript(改變圖片)</title>
+
+</head>
+<body>
+    
+    <img src="https://picsum.photos/300/200/">
+    <img src="https://picsum.photos/300/200/?blur">
+    
+    <hr />
+    <h2>測試：改變圖片</h2>
+
+   <!-- 一開始 pic1.jpg，moueover時，換成pic2.jpg，mouseout時，換回pic1.jpg -->
+
+    <img src="https://picsum.photos/300/200/" 
+         onmouseover="this.src = 'https://picsum.photos/300/200/?blur';"
+          onmouseout="this.src = 'https://picsum.photos/300/200/';">
+    
+    
+
+</html>

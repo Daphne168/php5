@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript(onclick/ onmouseover & onmouseout)</title>
+    
+</head>
+<body>
+    <p>網頁JavaScript示範-onclick/ onmouseover & onmouseout</p>
+
+    <!-- 當「物件」發生「事件」，執行「程式」 -->
+    <!-- 程式寫在「物件」上 -->
+    <!-- 以下是javascript直接寫在html內 -->
+    <h2>onclick事件</h2>
+    <input type="button" value="紅色" onclick=" document.bgColor='#FF0000';  " >
+    
+    <input type="button" value="黃色" onclick=" document.bgColor='#FFC400';  " >
+    
+    <input type="button" value="綠色" onclick=" document.bgColor='#00FF00';  " >
+    
+    <input type="button" value="藍色" onclick=" document.bgColor='#0000FF';  " >
+    
+    <hr />
+
+    <!-- onmouseover & onmouseout大多會一起出現 -->
+    <h2>onmouseover & onmouseout 事件</h2>
+    <input type="button" value="紅色" 
+           onmouseover="document.bgColor='#FF0000';  "
+           onmouseout ="document.bgColor='#FFFFFF';" >
+     
+    <input type="button" value="黃色" 
+           onmouseover="document.bgColor='#FFC400';  "
+           onmouseout ="document.bgColor='#FFFFFF';" >
+    
+    <input type="button" value="綠色" 
+           onmouseover="document.bgColor='#00FF00';  "
+           onmouseout ="document.bgColor='#FFFFFF';" >
+    
+    <input type="button" value="藍色"
+           onmouseover="document.bgColor='#0000FF';  "
+           onmouseout ="document.bgColor='#FFFFFF';" >
+
+
+</html>
